@@ -4,4 +4,4 @@ let any_value;
 
 any_value = 123;
 any_value = {};
-ay_value = null;
+any_value = null;
