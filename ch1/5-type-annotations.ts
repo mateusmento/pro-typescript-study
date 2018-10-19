@@ -4,7 +4,9 @@ let five = 5;
 // type of empty is any
 let empty;
 
-// type of hello is string
+let str: string;
+
+// type of hello is string that must be equal to 'Hello!'
 let hello: 'Hello!';
 
 // type of user is any object that contains the specified fileds

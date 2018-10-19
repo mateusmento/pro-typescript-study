@@ -43,7 +43,7 @@ enum Test
 
 enum Test
 {
-	v4 = 0, v5
+	v4 = 0, v5,
 }
 
 /*
@@ -58,3 +58,15 @@ Test == {
 	'2': 'v3',
 }
 */ 
+
+
+enum Name
+{
+	NAME1 = "TEST",
+
+//	ERROR: NAME2 must have initializer
+//	NAME2,
+
+	NAME2 = 1,
+	NAME3,
+}
