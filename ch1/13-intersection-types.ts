@@ -26,4 +26,4 @@ let test: Test
 // test = 12;
 
 // ERROR: type 'User' is not assignable to type 'Test'
-test = user;
+//test = user;
