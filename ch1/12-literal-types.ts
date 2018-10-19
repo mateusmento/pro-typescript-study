@@ -1,4 +1,3 @@
-
 let hello: 'Hello World!';
 hello = 'Hello World!';
 
@@ -17,4 +16,4 @@ type Name = PossibleNames | NamedObject;
 export let nam: Name;
  
 nam = 'NAME2';
-nam = {name: 'Mateus'}
+nam = {name: 'Mateus'};

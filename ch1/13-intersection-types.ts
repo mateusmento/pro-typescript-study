@@ -16,3 +16,14 @@ let user: User = {
 	username: 'USER1',
 	password: 'YOURSECRET'
 };
+
+
+type Test = User & number;
+
+let test: Test
+
+// ERROR: type '12' is not assignable to type 'Test'
+// test = 12;
+
+// ERROR: type 'User' is not assignable to type 'Test'
+test = user;
