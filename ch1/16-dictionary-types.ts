@@ -10,13 +10,5 @@ interface UserDic
 
 let users: UserDic = {};
 
-
-
-interface Dic<Key, Value>
-{
-	[index: Key]: Value;
-}
-
-let dic: Dic<Key, Value> = {};
-
-dic['key'] = 'value';
+users['USER1'] = { name: 'NAME1' };
+users['USER2'] = { name: 'NAME2' };
