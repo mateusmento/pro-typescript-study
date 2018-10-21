@@ -1,6 +1,11 @@
-interface User
+export interface User
 {
 	name: string;
+}
+
+export interface User
+{
+	email: string;
 }
 
 interface UserDic
@@ -10,5 +15,5 @@ interface UserDic
 
 let users: UserDic = {};
 
-users['USER1'] = { name: 'NAME1' };
-users['USER2'] = { name: 'NAME2' };
+users['USER1'] = { name: 'NAME1', email: '' };
+users['USER2'] = { name: 'NAME2', email: '' };
