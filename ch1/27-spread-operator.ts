@@ -8,11 +8,20 @@ let dic2 = { d:'c', e:'v', f:'c' };
 
 let letters = { ...dic1, ...dic2 };
 
-let arr = [1,2,3];
 
-function sum4(a,b,c,d)
+function sum4(a: any, b: any, c: any, d: any)
 {
 	return a+b+c+d;
 }
 
-sum4(...arr, 4);
+function sum(...args: number[])
+{
+	return args.reduce((sum, value) => sum + value);
+}
+
+let arr: number[] = [1,2,3,4];
+sum(1, 2, 3, 4, 5);
+sum(...arr);
+
+// ERROR: Expected 4 arguments, but got 1 or more.
+// sum4(...arr);

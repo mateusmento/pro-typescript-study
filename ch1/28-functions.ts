@@ -20,12 +20,23 @@ function rest_param(times: number, ...args: any[])
 	for (let i = 0; i < times; i++)	console.log(...args);
 }
 
-function overload(a: number, b: number);
-function overload(a: string, b: string);
-function overload(a: any, b: any)
+function overload(a: string, b: string): string;
+function overload(a: number, b: number): number;
+function overload(a: number): number;
+function overload(one: 1, two: 2): 3;
+function overload(a: any, b: any = null): any
 {
 	if (typeof a === 'string') a = +a;
 	if (typeof b === 'string') b = +b;
 
+	return a + b;
+}
+
+
+function multiply(a: number, b: number): number;
+function multiply(a: number): (b: number) => number;
+function multiply(a: number, b: number|null = null): number | ((b: number) => number)
+{
+	if (b === null) return (b: number) => a + b;
 	return a + b;
 }
